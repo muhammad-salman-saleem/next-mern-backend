@@ -1,4 +1,3 @@
-import mongoose from "mongoose";
 import  Vehicle  from "../models/car.model.js"; 
 import { ApiError } from "../utils/ApiError.js";
 import { ApiResponse } from "../utils/ApiResponse.js";

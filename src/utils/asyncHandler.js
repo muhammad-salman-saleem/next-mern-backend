@@ -6,16 +6,6 @@ const asyncHandler = (requestHandler) => {
   };
 };
 
-// same is First second is hire order function with try catch
 
-const asyncHandler2 = (requestHandler) => async (req, res, next) => {
-  try {
-    await requestHandler(req, res, next);
-  } catch (error) {
-    res
-      .status(error.code || 500)
-      .json({ success: false, message: error.message });
-  }
-};
 
-export { asyncHandler, asyncHandler2 };
+export { asyncHandler };
