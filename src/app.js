@@ -7,8 +7,8 @@ app.use(
   cors({
     // origin: process.env.CORS_ORIGIN , 
     origin: '*', 
-    methods: 'GET,HEAD,PUT,PATCH,POST,DELETE',
-    credentials: true,
+    // methods: 'GET,HEAD,PUT,PATCH,POST,DELETE',
+    // credentials: true,
   })
 );
 app.use(express.json({ limit: "16kb" }));
